@@ -1,0 +1,129 @@
+.hotelcard-container {
+  width: 19rem;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(248, 250, 252, 0.98)
+  );
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.hotelcard-container:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 16rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hotelcard-container:hover .img {
+  transform: scale(1.06);
+}
+
+.hotelcard-details {
+  color: var(--text-color-primary);
+  padding: 1rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.hotelcard-details > .d-flex {
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.location {
+  font-weight: 800;
+  font-size: 0.98rem;
+  line-height: 1.35;
+  color: var(--text-color-primary);
+}
+
+.rating {
+  margin-left: auto;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+.hotel-name {
+  color: var(--text-color-secondary);
+  font-size: 0.92rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-details {
+  color: var(--text-color-primary);
+  font-size: 0.95rem;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.price-details .price {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.button.btn-wishlist {
+  padding: 0.65rem;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.button.btn-wishlist:hover {
+  transform: scale(1.07);
+  background: #fff;
+}
+
+.favorite {
+  color: #737373;
+}
+
+.fav-selected {
+  color: #ef4444;
+}
+
+@media (max-width: 640px) {
+  .hotelcard-container {
+    width: 100%;
+  }
+}

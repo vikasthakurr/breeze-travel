@@ -1,0 +1,95 @@
+.auth-container {
+  width: 100%;
+}
+
+.auth-copy {
+  margin: 0 0 1rem;
+  color: var(--text-color-secondary);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.auth-title {
+  margin: 0 0 0.75rem;
+  color: #181e4b;
+  font-family: "Volkhov", serif;
+  font-size: 1.5rem;
+}
+
+.auth-label {
+  color: #1f2a58;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.asterisk {
+  color: #df6951;
+}
+
+.auth-input {
+  border: 1px solid rgba(223, 105, 81, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-color-primary);
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  margin-top: 0.5rem;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.auth-input::placeholder {
+  color: #94a3b8;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: rgba(223, 105, 81, 0.42);
+  box-shadow: 0 0 0 4px rgba(223, 105, 81, 0.14);
+}
+
+.lb-in-container {
+  padding-bottom: 1rem;
+}
+
+.button.btn-login {
+  width: 100%;
+  font-size: 1.05rem;
+  padding: 0.95rem 1rem;
+  font-weight: 800;
+  margin: 0.75rem 0 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #df6951, #f1a501);
+  color: #fff;
+  box-shadow: 0 16px 28px rgba(223, 105, 81, 0.28);
+}
+
+.cta {
+  padding-top: 0.9rem;
+}
+
+.button.btn-outline-primary {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  border-radius: 14px;
+  border: 1px solid rgba(223, 105, 81, 0.22);
+  background: rgba(255, 248, 232, 0.72);
+  color: #1f2a58;
+}
+
+.button.btn-outline-primary:hover {
+  background: rgba(255, 243, 214, 0.9);
+}
+
+.auth-note {
+  margin: 0.9rem 0 0;
+  color: var(--text-color-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.auth-note strong {
+  color: #df6951;
+}
