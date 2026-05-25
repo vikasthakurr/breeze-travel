@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Breeze Travel Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This folder contains the **user interface** for the Breeze Travel app.
 
-## Available Scripts
+## What this frontend does
 
-In the project directory, you can run:
+- Shows the home page with hotel categories and search options
+- Lets students search for hotels and view hotel details
+- Handles login, signup, wishlist, payment, and order summary screens
+- Talks to the backend API to fetch and update data
 
-### `npm start`
+## Before you start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+Create a `.env` file in this folder if you want to point the app to a different backend URL:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```env
+REACT_APP_API_BASE_URL=http://localhost:3500
+```
 
-### `npm run build`
+If you do not create this file, the app will use `http://localhost:3500` by default.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run the frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will open in your browser at:
 
-### `npm run eject`
+- http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Main folders
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/components/` → reusable UI parts like navbar, cards, filters, alerts
+- `src/pages/` → screens for home, hotel details, wishlist, payment, and admin
+- `src/services/` → API helper files
+- `src/context/` → React context for shared state
+- `src/reducer/` → reducer logic for state updates
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How the app works
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. The user opens the app in the browser.
+2. React renders the pages from `src/pages/`.
+3. Components call the backend using the API helper in `src/services/api.js`.
+4. The backend returns hotel, category, auth, and wishlist data.
+5. The UI updates based on that response.
 
-## Learn More
+## Common student questions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What port does the frontend use?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `3000`
 
-### Code Splitting
+### What port does the backend use?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `3500`
 
-### Analyzing the Bundle Size
+### Why is the app blank or not loading data?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Make sure the backend is running
+- Check that the backend URL in `.env` is correct
 
-### Making a Progressive Web App
+## Useful commands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+npm start
+npm run build
+```
 
-### Advanced Configuration
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project uses React and Tailwind CSS
+- The app is connected to the backend through `src/services/api.js`
+- If you change the backend port, update `REACT_APP_API_BASE_URL`
