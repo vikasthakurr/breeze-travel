@@ -1,83 +1,56 @@
-# Breeze Travel
+# breeze-travel
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square) 
 ![GitHub stars](https://img.shields.io/github/stars/vikasthakurr/breeze-travel?style=flat-square) 
 ![GitHub forks](https://img.shields.io/github/forks/vikasthakurr/breeze-travel?style=flat-square)
 
+## Overview
 
-Breeze Travel is a full-stack travel booking app with a React frontend and an Express + MongoDB backend.
+Full-stack travel booking & itinerary planning platform with user authentication, destination guides, and backend reservation services.
 
-## Project structure
+**Tags:** `#fullstack` `#javascript` `#travel-app` `#express` `#mongodb` `#frontend`
 
-- `frontend/` → React app for the user interface
-- `backend/` → Express API and database connection
+## Key Highlights & Concepts
 
-## Prerequisites
+- **Clean Architecture:** Semantic structuring, modular components, and maintainable codebase.
+- **Responsive Design:** Fluid UX optimized across mobile, tablet, and desktop viewports.
+- **Modern Standards:** Built following the latest web development standards and best practices.
 
-- Node.js and npm installed
-- MongoDB running locally (or a valid `DATABASE_URI` in the backend `.env` file)
+## Getting Started
 
-## Setup
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16+ or v18+ recommended)
+- Modern Web Browser (Chrome, Firefox, Safari)
+- Git installed on your system
 
-### 1. Install dependencies
+### Installation
 
-```bash
-cd backend
-npm install
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vikasthakurr/breeze-travel.git
+   cd breeze-travel
+   ```
+2. **Explore the resources:**
+   Navigate through the modules and notes to review structured concepts.
 
-cd ../frontend
-npm install
+## Repository Structure
+```text
+breeze-travel/
+ README.md
+ backend
+ frontend
 ```
 
-### 2. Configure the backend
+---
 
-Create a `.env` file in the `backend/` folder:
+## Author
 
-```env
-DATABASE_URI=mongodb://localhost:27017/breeze-travel
-PORT=3500
-```
-
-### 3. Start the backend
-
-```bash
-cd backend
-npm run dev
-```
-
-The backend will run on `http://localhost:3500`.
-
-### 4. Start the frontend
-
-Open a new terminal and run:
-
-```bash
-cd frontend
-npm start
-```
-
-The frontend will run on `http://localhost:3000`.
-
-## Demo data
-
-To seed sample hotels, categories, and users:
-
-```bash
-cd backend
-npm run seed
-```
-
-## Useful links
-
-- Frontend: `http://localhost:3000`
-- Backend: `http://localhost:3500`
-
-## Notes for students
-
-- The frontend uses the backend API helper in `frontend/src/services/api.js`
-- If the UI does not load data, confirm the backend is running
-- If the database connection fails, check the `DATABASE_URI` in `backend/.env`
+**Vikas Thakur**  
+- **LinkedIn:** [@vikasthakurr](https://www.linkedin.com/in/vikasthakurr)  
+- **Twitter / X:** [@vikasthaakurr](https://twitter.com/vikasthaakurr)  
+- **GitHub:** [@vikasthakurr](https://github.com/vikasthakurr)
