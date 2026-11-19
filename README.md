@@ -1,5 +1,14 @@
 # Breeze Travel
 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square) 
+![GitHub stars](https://img.shields.io/github/stars/vikasthakurr/breeze-travel?style=flat-square) 
+![GitHub forks](https://img.shields.io/github/forks/vikasthakurr/breeze-travel?style=flat-square)
+
+
 Breeze Travel is a full-stack travel booking app with a React frontend and an Express + MongoDB backend.
 
 ## Project structure
